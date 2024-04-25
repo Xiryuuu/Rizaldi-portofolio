@@ -1,0 +1,122 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  animation: fadeIn 1s ease forwards;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/bekgroun.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+
+p {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  font-size: 30px;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  animation: fadeIn 1s ease forwards;
+}
+
+.back-button button {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #333;
+  margin: 20px 0;
+}
+
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+  text-transform: uppercase;
+}
+
+.profile,
+.contact,
+.location {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.profile p,
+.contact p,
+.location p {
+  color: #666;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .profile,
+  .contact,
+  .location {
+    margin: 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
